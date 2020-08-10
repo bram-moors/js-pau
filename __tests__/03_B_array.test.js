@@ -1,10 +1,10 @@
 let __ = undefined;
 
-xdescribe('About Arrays', () => {
+describe('About Arrays', () => {
   it('should create arrays', () => {
     const emptyArray = [];
-    expect(typeof emptyArray).toEqual(__);
-    expect(emptyArray.length).toEqual(__);
+    expect(typeof emptyArray).toEqual("object");
+    expect(emptyArray.length).toEqual(0);
 
     const multiTypeArray = [
       0,
@@ -16,19 +16,19 @@ xdescribe('About Arrays', () => {
       { value1: 4, value2: 5 },
       [6, 7],
     ];
-    expect(multiTypeArray[0]).toEqual(__);
-    expect(multiTypeArray[2]).toEqual(__);
-    expect(multiTypeArray[3]()).toEqual(__);
-    expect(multiTypeArray[4].value1).toEqual(__);
-    expect(multiTypeArray[4]['value2']).toEqual(__);
-    expect(multiTypeArray[5][0]).toEqual(__);
+    expect(multiTypeArray[0]).toEqual(0);
+    expect(multiTypeArray[2]).toEqual("two");
+    expect(multiTypeArray[3]()).toEqual(3);
+    expect(multiTypeArray[4].value1).toEqual(4);
+    expect(multiTypeArray[4]['value2']).toEqual(5);
+    expect(multiTypeArray[5][0]).toEqual(6);
   });
 
   it('should understand array literals', () => {
     const array = [];
 
     array[0] = 1;
-    expect(array).toEqual(__);
+    expect(array).toEqual(array.push(1));
 
     array[1] = 2;
     expect(array).toEqual(__);
@@ -40,15 +40,15 @@ xdescribe('About Arrays', () => {
   it('should understand array length', () => {
     let array = [1, 2, 3, 4];
 
-    expect(array.length).toEqual(__);
+    expect(array.length).toEqual(4);
     array.push(5, 6);
-    expect(array.length).toEqual(__);
+    expect(array.length).toEqual(6);
 
     array = new Array(10);
-    expect(array.length).toEqual(__);
+    expect(array.length).toEqual(7);
 
     array.length = 5;
-    expect(array.length).toEqual(__);
+    expect(array.length).toEqual(arr.slice(0, 4);
   });
 
   it('should slice arrays', () => {
